@@ -26,8 +26,12 @@
 // are different per mode.
 
 $colors: (
-  primary:    #387ef5,
-  secondary:  #32db64,
+  twitter:(
+    base: #55acee,
+    contrast: #ffffff
+  ),
+  primary:   #00A3C1,
+  secondary:  #FF6600,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,

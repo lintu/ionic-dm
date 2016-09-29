@@ -1,0 +1,23 @@
+<ion-header >
+  <ion-navbar primary>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>dm</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="getting-started">
+  <ion-list>
+    <button  twitter ion-item *ngFor="let item of items" (click)="itemTapped($event, item)" >
+      <ion-thumbnail item-left>
+      <img src="assets/default-img.jpg">
+      </ion-thumbnail>
+      <h2>{{item.title}}</h2>
+      <p>{{item.note}}</p>
+    <ion-icon item-right name="more"></ion-icon>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding >
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
